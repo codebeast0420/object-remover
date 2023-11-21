@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "drawsana",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/tonynimble/Drawsana.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3862163d899830cd0756f7b00d01628b6048ed9b"
+      }
+    },
+    {
+      "identity" : "swiftuicoreimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/tonynimble/SwiftUICoreImage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "87c6dfcf6c0bd87097984348062979caab458ac3"
+      }
+    }
+  ],
+  "version" : 2
+}

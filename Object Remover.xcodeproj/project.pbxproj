@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BFA0409A887C2C7CB168387 /* Pods_Object_Remover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BCAC11A93DAF0BECE58DB5 /* Pods_Object_Remover.framework */; };
 		D4036E0E2AC336790063057F /* Object_RemoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4036E0D2AC336790063057F /* Object_RemoverApp.swift */; };
 		D4036E102AC336790063057F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4036E0F2AC336790063057F /* ContentView.swift */; };
 		D4036E122AC3367A0063057F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4036E112AC3367A0063057F /* Assets.xcassets */; };
@@ -30,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34C63DD8AB7045C4BC58FA9F /* Pods-Object Remover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Object Remover.release.xcconfig"; path = "Target Support Files/Pods-Object Remover/Pods-Object Remover.release.xcconfig"; sourceTree = "<group>"; };
+		7480674A4CAF5DA06B59238F /* Pods-Object Remover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Object Remover.debug.xcconfig"; path = "Target Support Files/Pods-Object Remover/Pods-Object Remover.debug.xcconfig"; sourceTree = "<group>"; };
+		76BCAC11A93DAF0BECE58DB5 /* Pods_Object_Remover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Object_Remover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4036E0A2AC336790063057F /* Object Remover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Object Remover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4036E0D2AC336790063057F /* Object_RemoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_RemoverApp.swift; sourceTree = "<group>"; };
 		D4036E0F2AC336790063057F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,17 +63,38 @@
 			files = (
 				D455DD0D2AE0317D00DE0B6A /* SwiftUICoreImage in Frameworks */,
 				D4FE85FF2AC875E20041746B /* Drawsana in Frameworks */,
+				4BFA0409A887C2C7CB168387 /* Pods_Object_Remover.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4207B570728D282172C030E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7480674A4CAF5DA06B59238F /* Pods-Object Remover.debug.xcconfig */,
+				34C63DD8AB7045C4BC58FA9F /* Pods-Object Remover.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1BA47BDE1B8619F4EA8C876 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76BCAC11A93DAF0BECE58DB5 /* Pods_Object_Remover.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4036E012AC336790063057F = {
 			isa = PBXGroup;
 			children = (
 				D4036E0C2AC336790063057F /* Object Remover */,
 				D4036E0B2AC336790063057F /* Products */,
+				4207B570728D282172C030E0 /* Pods */,
+				D1BA47BDE1B8619F4EA8C876 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4036E192AC3367A0063057F /* Build configuration list for PBXNativeTarget "Object Remover" */;
 			buildPhases = (
+				B8BE412CF1176E85AF2F5352 /* [CP] Check Pods Manifest.lock */,
 				D4036E062AC336790063057F /* Sources */,
 				D4036E072AC336790063057F /* Frameworks */,
 				D4036E082AC336790063057F /* Resources */,
+				9CB577396416BB31B739DCD4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,8 +223,8 @@
 			);
 			mainGroup = D4036E012AC336790063057F;
 			packageReferences = (
-				D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana" */,
-				D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage" */,
+				D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana.git" */,
+				D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage.git" */,
 			);
 			productRefGroup = D4036E0B2AC336790063057F /* Products */;
 			projectDirPath = "";
@@ -220,6 +247,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CB577396416BB31B739DCD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Object Remover/Pods-Object Remover-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Object Remover/Pods-Object Remover-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Object Remover/Pods-Object Remover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8BE412CF1176E85AF2F5352 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Object Remover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4036E062AC336790063057F /* Sources */ = {
@@ -358,6 +427,7 @@
 		};
 		D4036E1A2AC3367A0063057F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7480674A4CAF5DA06B59238F /* Pods-Object Remover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -401,6 +471,7 @@
 		};
 		D4036E1B2AC3367A0063057F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C63DD8AB7045C4BC58FA9F /* Pods-Object Remover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,7 +537,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage" */ = {
+		D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/tonynimble/SwiftUICoreImage.git";
 			requirement = {
@@ -474,7 +545,7 @@
 				kind = branch;
 			};
 		};
-		D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana" */ = {
+		D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/tonynimble/Drawsana.git";
 			requirement = {
@@ -487,12 +558,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		D455DD0C2AE0317D00DE0B6A /* SwiftUICoreImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage" */;
+			package = D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage.git" */;
 			productName = SwiftUICoreImage;
 		};
 		D4FE85FE2AC875E20041746B /* Drawsana */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana" */;
+			package = D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana.git" */;
 			productName = Drawsana;
 		};
 /* End XCSwiftPackageProductDependency section */

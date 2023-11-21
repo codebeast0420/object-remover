@@ -1,0 +1,6 @@
+framework module Pods_Object_Remover {
+  umbrella header "Pods-Object Remover-umbrella.h"
+
+  export *
+  module * { export * }
+}
