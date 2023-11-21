@@ -93,6 +93,7 @@ struct MainView: View {
         .fullScreenCover(isPresented: $cropperShown){
             ImageCropperView(isShowing: $cropperShown, image: $vm.targetImage, cropShapeType: .rect, presetFixedRatioType: .canUseMultiplePresetFixedRatio())
                 .ignoresSafeArea(edges: .bottom)
+            ToolBarView(selectedTab: $selectedTab, strokeWidth: $strokeWidth, startInpainting: $startInpainting, didChange: $didChange, imageCropperShow: $cropperShown, selectedOption: $selectedEditOption, fetchOptionPercentValue: fetchOptionPercentValue)
         }
         .onDisappear {
             print("DetailView disappeared!")

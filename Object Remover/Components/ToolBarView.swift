@@ -29,6 +29,7 @@ struct ToolBarView: View {
 
                 Button(action: {
                     selectedTab = .crop
+                    imageCropperShow = true
                 }) {
                     Text("Crop&Roate")
                 }

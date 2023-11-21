@@ -129,61 +129,61 @@ public final class CropToolbar: UIView, CropToolbarProtocol {
             }
         }
 
-        createButtonContainer()
-        setButtonContainerLayout()
-
-        if config.mode == .normal {
-            addButtonsToContainer(button: cancelButton)
-        }
-        
-        if config.toolbarButtonOptions.contains(.counterclockwiseRotate) {
-            addButtonsToContainer(button: counterClockwiseRotationButton)
-        }
-
-        if config.toolbarButtonOptions.contains(.clockwiseRotate) {
-            addButtonsToContainer(button: clockwiseRotationButton)
-        }
-
-        if config.toolbarButtonOptions.contains(.alterCropper90Degree) {
-            addButtonsToContainer(button: alterCropper90DegreeButton)
-        }
-        
-        if config.toolbarButtonOptions.contains(.horizontallyFlip) {
-            addButtonsToContainer(button: horizontallyFlipButton)
-        }
-        
-        if config.toolbarButtonOptions.contains(.verticallyFlip) {
-            addButtonsToContainer(button: verticallyFlipButton)
-        }
-        
-        if config.toolbarButtonOptions.contains(.autoAdjust) {
-            addButtonsToContainer(button: autoAdjustButton)
-            autoAdjustButton.isHidden = true
-            autoAdjustButtonActive = false
-        }
-
-        if config.toolbarButtonOptions.contains(.reset) {
-            let icon = iconProvider?.getResetIcon() ?? ToolBarButtonImageBuilder.resetImage()
-            resetButton = createResetButton(with: icon)
-            addButtonsToContainer(button: resetButton)
-            resetButton?.isHidden = true
-        }
-
-        if config.toolbarButtonOptions.contains(.ratio) && config.ratioCandidatesShowType == .presentRatioListFromButton {
-            if config.includeFixedRatiosSettingButton {
-                fixedRatioSettingButton = createSetRatioButton()
-                addButtonsToContainer(button: fixedRatioSettingButton!)
-
-                if config.presetRatiosButtonSelected {
-                    handleFixedRatioSetted(ratio: 0)
-                    resetButton?.isHidden = false
-                }
-            }
-        }
-
-        if config.mode == .normal {
-            addButtonsToContainer(button: cropButton)
-        }
+//        createButtonContainer()
+//        setButtonContainerLayout()
+//
+//        if config.mode == .normal {
+//            addButtonsToContainer(button: cancelButton)
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.counterclockwiseRotate) {
+//            addButtonsToContainer(button: counterClockwiseRotationButton)
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.clockwiseRotate) {
+//            addButtonsToContainer(button: clockwiseRotationButton)
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.alterCropper90Degree) {
+//            addButtonsToContainer(button: alterCropper90DegreeButton)
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.horizontallyFlip) {
+//            addButtonsToContainer(button: horizontallyFlipButton)
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.verticallyFlip) {
+//            addButtonsToContainer(button: verticallyFlipButton)
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.autoAdjust) {
+//            addButtonsToContainer(button: autoAdjustButton)
+//            autoAdjustButton.isHidden = true
+//            autoAdjustButtonActive = false
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.reset) {
+//            let icon = iconProvider?.getResetIcon() ?? ToolBarButtonImageBuilder.resetImage()
+//            resetButton = createResetButton(with: icon)
+//            addButtonsToContainer(button: resetButton)
+//            resetButton?.isHidden = true
+//        }
+//
+//        if config.toolbarButtonOptions.contains(.ratio) && config.ratioCandidatesShowType == .presentRatioListFromButton {
+//            if config.includeFixedRatiosSettingButton {
+//                fixedRatioSettingButton = createSetRatioButton()
+//                addButtonsToContainer(button: fixedRatioSettingButton!)
+//
+//                if config.presetRatiosButtonSelected {
+//                    handleFixedRatioSetted(ratio: 0)
+//                    resetButton?.isHidden = false
+//                }
+//            }
+//        }
+//
+//        if config.mode == .normal {
+//            addButtonsToContainer(button: cropButton)
+//        }
     }
     
     public override var intrinsicContentSize: CGSize {

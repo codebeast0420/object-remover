@@ -73,7 +73,7 @@ public struct CropViewConfig {
         case slideDial(config: SlideDialConfig = .init())
     }
     
-    public var builtInRotationControlViewType: BuiltInRotationControlViewType = .rotationDial()
+    public var builtInRotationControlViewType: BuiltInRotationControlViewType = .slideDial()
     
     public init() {}
 }
