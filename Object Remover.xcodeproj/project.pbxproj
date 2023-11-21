@@ -20,7 +20,6 @@
 		D44F5DC72ADAFAEA00CD93AF /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5DC62ADAFAEA00CD93AF /* ToolBarView.swift */; };
 		D44F5DC92ADB017D00CD93AF /* black512.png in Resources */ = {isa = PBXBuildFile; fileRef = D44F5DC82ADB017D00CD93AF /* black512.png */; };
 		D44F5DCB2ADB84BC00CD93AF /* ImageCropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5DCA2ADB84BC00CD93AF /* ImageCropperView.swift */; };
-		D44F5DCE2ADD0CDA00CD93AF /* Mantis in Frameworks */ = {isa = PBXBuildFile; productRef = D44F5DCD2ADD0CDA00CD93AF /* Mantis */; };
 		D44F5DD72ADD195800CD93AF /* ImageEditorParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5DD62ADD195800CD93AF /* ImageEditorParameters.swift */; };
 		D44F5DD92ADD19F900CD93AF /* CZImageEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5DD82ADD19F800CD93AF /* CZImageEditorViewModel.swift */; };
 		D44F5DDB2ADD1A2200CD93AF /* FilteredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5DDA2ADD1A2200CD93AF /* FilteredImage.swift */; };
@@ -58,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44F5DCE2ADD0CDA00CD93AF /* Mantis in Frameworks */,
 				D455DD0D2AE0317D00DE0B6A /* SwiftUICoreImage in Frameworks */,
 				D4FE85FF2AC875E20041746B /* Drawsana in Frameworks */,
 			);
@@ -167,7 +165,6 @@
 			name = "Object Remover";
 			packageProductDependencies = (
 				D4FE85FE2AC875E20041746B /* Drawsana */,
-				D44F5DCD2ADD0CDA00CD93AF /* Mantis */,
 				D455DD0C2AE0317D00DE0B6A /* SwiftUICoreImage */,
 			);
 			productName = "Object Remover";
@@ -200,7 +197,6 @@
 			mainGroup = D4036E012AC336790063057F;
 			packageReferences = (
 				D4FE85FD2AC875E20041746B /* XCRemoteSwiftPackageReference "Drawsana" */,
-				D44F5DCC2ADD0CDA00CD93AF /* XCRemoteSwiftPackageReference "Mantis" */,
 				D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage" */,
 			);
 			productRefGroup = D4036E0B2AC336790063057F /* Products */;
@@ -470,14 +466,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D44F5DCC2ADD0CDA00CD93AF /* XCRemoteSwiftPackageReference "Mantis" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/tonynimble/Mantis.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.5;
-			};
-		};
 		D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/tonynimble/SwiftUICoreImage.git";
@@ -497,11 +485,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D44F5DCD2ADD0CDA00CD93AF /* Mantis */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D44F5DCC2ADD0CDA00CD93AF /* XCRemoteSwiftPackageReference "Mantis" */;
-			productName = Mantis;
-		};
 		D455DD0C2AE0317D00DE0B6A /* SwiftUICoreImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D455DD0B2AE0317D00DE0B6A /* XCRemoteSwiftPackageReference "SwiftUICoreImage" */;
